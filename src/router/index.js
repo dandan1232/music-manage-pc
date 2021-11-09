@@ -13,7 +13,7 @@ export default new Router({
     {
       path: '/Home',
       component: resolve => require(['../components/Home.vue'], resolve),
-      children:[
+      children: [
         {
           path: '/Info',
           component: resolve => require(['../pages/InfoPage.vue'], resolve)
@@ -46,11 +46,7 @@ export default new Router({
           path: '/Comment',
           component: resolve => require(['../pages/CommentPage.vue'], resolve)
         }
-
       ]
     }
-
-    
-
   ]
 })
